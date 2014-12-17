@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'futura_ltregular';
+    src: url('../futura/futuralt-webfont.eot');
+    src: url('../futura/futuralt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../futura/futuralt-webfont.woff2') format('woff2'),
+         url('../futura/futuralt-webfont.woff') format('woff'),
+         url('../futura/futuralt-webfont.ttf') format('truetype'),
+         url('../futura/futuralt-webfont.svg#futura_ltregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'geosanslightregular';
+    src: url('../geosans/geosanslight-webfont.eot');
+    src: url('../geosans/geosanslight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../geosans/geosanslight-webfont.woff2') format('woff2'),
+         url('../geosans/geosanslight-webfont.woff') format('woff'),
+         url('../geosans/geosanslight-webfont.ttf') format('truetype'),
+         url('../geosans/geosanslight-webfont.svg#geosanslightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+    background-color: #4d5966;
+}
+
+.top-container {
+    background-color: #3f4752;
+    height: 12em; 
+    width: 100%; 
+}
+
+.app-title {
+    padding-top: 1em;
+    text-align: center; 
+    font-family: futura_ltregular;
+    text-transform: uppercase; 
+    font-size: 3em; 
+    font-weight: 900;
+    letter-spacing: 0.05em;
+}
+
+.first {
+    color: #00a7ab;
+}
+
+.second {
+    color: #d0d0d0;
+}
+
+hr {
+    background-color: #616b76;
+    border: none; 
+    height: 2px; 
+    
+}
+
+.title-separator {
+    margin-top: 1em;
+    width: 22em; 
+}
+
+.credit {
+    text-align: center;
+    font-family: futura_ltregular;
+    color: #fa6064;
+    padding-top: 0.6em; 
+    font-size: 1.3em; 
+    width: 15em; 
+    margin: 0 auto; 
+}
+
+
+.footer {
+    background-color: #3f4752;
+    height: 8em; 
+    width: 100%; 
+    /*margin-top: 1em; adujust this margin accordingly after filling in the body*/
+}
+
+.list {
+    width: 100%; /*100% of .body*/ 
+    height: 30em;
+    margin: 0 auto; 
+    display: block; 
+
+
+}
+
+.add-stuff {
+    padding: 3em 0 4em 0; 
+    width: 100%; 
+    text-align: center; 
+
+
+}
+
+#add-item {
+    font-family: futura_ltregular; 
+    font-size: 1.5em; 
+    font-weight: 50; 
+    letter-spacing: 0.009em; 
+    text-indent: 2em; 
+    width: 15em; 
+    border: none;
+    background-color: #9ea2a7;
+    border-radius: 0.18em; 
+    
+}
+
+#add-item:focus {
+    outline: 0
+}
+
+::-webkit-input-placeholder {
+   color: #4d5966;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #4d5966;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #4d5966;  
+}
+
+:-ms-input-placeholder {  
+   color: #4d5966;  
+}
+
+button {
+    margin-left: 0.9em;
+    font-family: geosanslightregular; 
+    font-size: 1.3em; 
+    border: none; 
+    border-radius: 0.2em; 
+    width: 4em; 
+}
+
+#add {
+    background-color: #00a7ab;
+    vertical-align: 0.1em; 
+}
+
+.item-row {
+    width: 29em; 
+    margin: 0 auto; 
+    /*padding-left: 1.15em; */
+}
+
+.ticked, .unticked {
+    margin-right: 0.8em; 
+    vertical-align: -0.4em;
+    display: inline-block; 
+    width: 2em; 
+    height: 2em; 
+    
+}
+
+.unticked {
+    border: 3px solid #656c76; 
+    border-radius: 50%; 
+}
+
+.ticked {
+    background-image: url('../images/ticked.png');
+}
+
+
+.item {
+    display: inline-block; 
+    color: #fffffd; 
+    font-family: futura_ltregular;
+    font-size: 1.7em; 
+    font-weight: 300; 
+    letter-spacing: 0.009em;
+}
+
+#delete {
+    display: inline-block; 
+    background-color: #ef6168;
+    color: white; 
+    vertical-align: 0.1em; 
+    float: right; 
+}
+
+.item-separator {
+    margin-top: 0.6em; 
+    margin-bottom: 1em; 
+}
+
+.footer-text {
+    text-align: center; 
+    color: white; 
+    font-family: geosanslightregular; 
+    font-size: 1.2em; 
+    letter-spacing: 0.03em; 
+    font-weight: 300;
+    margin-bottom: 0.4em;
+}
+
+.footer {
+    padding-top: 2.2em; 
+}
+
+a {
+    text-decoration: none; 
+    color: #9ea2a7; 
+    
+}
+
+a:hover {
+    color: #fff; 
+}
+
+
+/*really works when padding: 0*/ 
+@media (max-width: 767px){
+    
+    /*.add-stuff {
+    }*/
+    #add {
+       margin: 0 auto;
+        display: block; 
+        
+    } 
+    
+    #add-item {
+        margin-bottom: 0.5em; 
+ }
+    #delete {
+        margin-right: 6%; 
+        
+    }
+    
+    .item-row {
+        width: 100%;
+        padding-left: 1em; 
+    }
+    
+    .item-separator {
+        width: 94%; 
+        float: left; 
+        padding-left: 1em; 
+    }
+    
+    
+}
+    
+    
+    
