@@ -5,6 +5,8 @@
     <title>Shopping App</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/reset.css">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
 </head>
 <body>
   <div class="top-container">
@@ -15,8 +17,17 @@
       
   
   <div class="list">
-      <div class="add-stuff">
-          <input id="add-item" type="text" autocomplete="off" placeholder="Add item"><button id="add">ADD</button>
+      <form class="add-stuff" method="post" accept-charset="utf-8">
+        <input id="add-item" class="input-item" type="text" autocomplete="off" placeholder="Add item">
+        <button id="add" type="submit">ADD</button>
+      </form>
+      
+<!--
+      <div class="item-list">
+          <ul>
+              <li class="done"></li>
+              <li class="item-row"></li>
+          </ul>
       </div>
       
       <div class="item-row">
@@ -53,6 +64,7 @@
           <button id="delete">DEL</button>
           <hr class="item-separator">
       </div>
+-->
       
   </div>
   

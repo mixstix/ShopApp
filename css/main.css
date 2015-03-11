@@ -32,6 +32,8 @@
 
 body {
     background-color: #4d5966;
+    height: 45em; 
+    position: relative; 
 }
 
 .top-container {
@@ -85,14 +87,17 @@ hr {
     background-color: #3f4752;
     height: 8em; 
     width: 100%; 
+    padding-top: 2.2em; 
+    margin-top: 4em;  
     /*margin-top: 1em; adujust this margin accordingly after filling in the body*/
 }
 
 .list {
     width: 100%; /*100% of .body*/ 
-    height: 30em;
+/*    height: 30em;*/
     margin: 0 auto; 
     display: block; 
+    min-height: 50%;
 
 
 }
@@ -145,7 +150,9 @@ button {
     border: none; 
     border-radius: 0.2em; 
     width: 4em; 
+    outline: none; 
 }
+
 
 #add {
     background-color: #00a7ab;
