@@ -159,6 +159,11 @@ button {
     vertical-align: 0.1em; 
 }
 
+#add:hover {
+    cursor: pointer; 
+    background-color: #00c4c9;
+}
+
 .item-row {
     width: 29em; 
     margin: 0 auto; 
@@ -199,12 +204,18 @@ button {
     letter-spacing: 0.009em;
 }
 
-#delete {
+.delete {
     display: inline-block; 
     background-color: #ef6168;
     color: white; 
     vertical-align: 0.1em; 
     float: right; 
+}
+
+.delete:hover {
+    cursor: pointer;
+    background-color: #ff757c;
+
 }
 
 .item-separator {
@@ -251,7 +262,7 @@ a:hover {
     #add-item {
         margin-bottom: 0.5em; 
  }
-    #delete {
+    .delete {
         margin-right: 6%; 
         
     }
